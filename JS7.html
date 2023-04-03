@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     /* let count = 0;
+       let number= +prompt("Hoe many greetings do you want?",1000)
+        for (count = 1; count <= number; count++){
+            document.writeln(count+". Glory to ukraine"+"<br/>");
+        }
+        document.write("Glory to Heroes "+count+"times!")*/
+
+
+      /*  let min=+prompt("Enter min",0)
+        let max=+prompt("Enter max", 0)
+
+        for( let count = min; count<= max; count++){
+            if( count%2==0){
+                document.writeln(count);
+        }
+    }*/
+
+        /*let min=+prompt("Enter min",0)
+        let max=+prompt("Enter max", 0)
+        let sum=0;
+        for( let i = min; i<= max; i++){
+          sum = sum+i;
+        }
+        document.write(`Сума чисел в діапазоні ${min} до ${max}  дорівнює ${sum}`)*/
+
+        /*let sum = 0;
+while (true) {
+  let value = +prompt('Введіть число', '');
+  if (!value) break; 
+  sum += value;
+}
+alert( 'Сума: ' + sum );*/
+
+/*let number;
+do{
+    number=prompt("Введіть число, більше 100",0);
+}while (number <= 100 && number!=null);
+if(number===null){
+    alert("До побачення!")
+}else{
+    alert
+("Ваше число: "+ number)
+}*/
+
+
+let numX=54;
+let num;
+let count=0;
+do{
+    count++
+    num=prompt("Введіть число",0);
+    if(num==null){
+        alert("До побачення!")
+    }else if(count>8){
+        alert("Ви використали свій ліміт спроб. На жаль Ви не вгадали. До побачення!")
+    }else if(num>numX){
+        alert(`Спроба №${count}. Ваше число більше`)
+    }else if(num<numX){
+       alert(`Спроба №${count}. Ваше число менше`)
+    }else if(num==numX){
+        alert("Ви вгадали! "+numX+ " кількість спроб: "+ count)    
+    }else{
+        alert("Ви ввели не число")
+    }
+}while (num!=numX && num!=null&&count<=8);
+
+
+
+
+//дз факторіал кількість спроб
+
+
+    </script>
+</body>
+</html>
